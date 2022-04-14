@@ -1,6 +1,6 @@
 namespace ProjetoBanco.Models
 {
-    public class BancAccount
+    public class BankAccount
     {
         public double Balance { get; set; }
         public Holder Holder { get; set; }
@@ -35,7 +35,7 @@ namespace ProjetoBanco.Models
         public void TakeOut(double value){
             Balance = Balance - value;
         }
-        public string Deposit(double value){
+        public void Deposit(double value){
             Balance = Balance - value;
             
         }
